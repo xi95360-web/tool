@@ -1,0 +1,18 @@
+recording_directory: ~/Movies/ZoomRecordings
+obs_scene_name: Zoom Recording
+obs_websocket_host: localhost
+obs_websocket_port: 4455
+obs_websocket_password: ""
+multi_output_device: Zoom Multi-Output
+system_audio_device: BlackHole 2ch
+microphone_device: MacBook Microphone
+auto_open_zoom: true
+auto_open_obs: true
+extract_audio: true
+transcribe: false
+transcription_backend: mlx-whisper
+transcription_model: mlx-community/whisper-small-mlx
+whisper_cpp_binary: whisper-cli
+whisper_cpp_model: ""
+keep_original_mkv: true
+audio_tracks_separate: false

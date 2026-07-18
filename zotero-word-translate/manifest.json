@@ -1,0 +1,15 @@
+{
+  "manifest_version": 2,
+  "name": "Zotero 选词翻译",
+  "version": "1.0.3",
+  "description": "在 Zotero 阅读器中选中文字时显示中英翻译。",
+  "author": "Jessica",
+  "homepage_url": "https://github.com/xi95360-web/tool/tree/main/zotero-word-translate",
+  "applications": {
+    "zotero": {
+      "id": "word-translate@example.com",
+      "strict_min_version": "6.999",
+      "strict_max_version": "9.*"
+    }
+  }
+}

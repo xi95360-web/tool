@@ -1,0 +1,4 @@
+interface:
+  display_name: "Zoom Recording Helper"
+  short_description: "Set up and troubleshoot consent-based Mac recording"
+  default_prompt: "Use $zoom-recording-helper to set up or troubleshoot consent-based Zoom recording on macOS."

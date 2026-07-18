@@ -1,0 +1,24 @@
+#!/bin/zsh
+set -u
+
+PROJECT_DIR="${0:A:h}"
+PYTHON="$PROJECT_DIR/.venv/bin/python3"
+[[ -x "$PYTHON" ]] || PYTHON="$(command -v python3 2>/dev/null || true)"
+
+if [[ -z "$PYTHON" ]]; then
+  print -u2 "FAIL: 未找到 Python 3。请先运行: brew install python"
+  exit 1
+fi
+
+export PYTHONPATH="$PROJECT_DIR${PYTHONPATH:+:$PYTHONPATH}"
+
+case "${1:-}" in
+  setup)  exec "$PYTHON" -m scripts.setup "${@:2}" ;;
+  doctor) exec "$PYTHON" -m scripts.doctor "${@:2}" ;;
+  start)  exec "$PYTHON" -m scripts.start_recording "${@:2}" ;;
+  stop)   exec "$PYTHON" -m scripts.stop_recording "${@:2}" ;;
+  *)
+    print "用法: ./zoom-record {setup|doctor|start|stop}"
+    exit 2
+    ;;
+esac

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Zotero Word Translate"
+  short_description: "Build and maintain the Zotero translation plugin"
+  default_prompt: "Use $zotero-word-translate to build, package, or troubleshoot this Zotero translation plugin."
