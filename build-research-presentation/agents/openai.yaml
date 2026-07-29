@@ -1,4 +1,4 @@
 interface:
   display_name: "Research Presentation Builder"
-  short_description: "Build rigorous proposal and journal club decks"
-  default_prompt: "Use $build-research-presentation to create a rigorous, evidence-dense proposal or journal club presentation."
+  short_description: "Build rigorous, evidence-led proposal and journal club decks"
+  default_prompt: "Use $build-research-presentation to create a rigorous proposal or journal club deck with an evidence-bounded action-title storyline."
