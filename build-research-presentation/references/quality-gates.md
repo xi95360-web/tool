@@ -6,18 +6,20 @@ Use these as pass/hold gates. Do not call the deck final while a critical item i
 
 - [ ] Route, audience, duration, venue, language, and format are known
 - [ ] Required questions and institutional constraints are covered
-- [ ] The deck is scoped to fit the time with Q&A protected
+- [ ] The deck is scoped to finish roughly 5–10% before the hard talk limit with Q&A protected
 - [ ] Assumptions are explicit
 - [ ] Confidentiality, permissions, and ethics/governance constraints are recorded where relevant
 
 ## Gate 2 — Scientific Spine
 
 - [ ] One-sentence thesis or central question is precise
+- [ ] The deck makes one defensible main argument
 - [ ] The gap follows from cited evidence
 - [ ] Section order is causal, inferential, chronological, or otherwise explicit
 - [ ] Transitions explain why the next slide follows
 - [ ] The closing answers the opening question
 - [ ] No circular reasoning or missing premise
+- [ ] Action titles alone pass the ghost-deck test and remain within the claim ledger
 
 ## Gate 3 — Evidence
 
@@ -61,10 +63,11 @@ Apply only to journal clubs:
 
 For each content slide:
 
-- [ ] Claim/question title
+- [ ] Evidence-bounded action title or precise unresolved question
 - [ ] One scientific purpose
-- [ ] Readable evidence object
+- [ ] One dominant readable evidence exhibit, or one multi-panel inferential unit
 - [ ] Key observation visibly annotated
+- [ ] A visible “so what” connects the observation to the title
 - [ ] Bounded interpretation
 - [ ] Limitation or uncertainty where relevant
 - [ ] On-slide source locator
@@ -107,16 +110,19 @@ No evidence-bearing slide may pass on visual appeal alone.
 - [ ] Whitespace is balanced and purposeful
 - [ ] The audience always knows where to look
 - [ ] Artifact-open test, font/overflow findings, and reviewer observations are recorded
+- [ ] Body text, action titles, labels, and citations meet the room-appropriate size floor
 
 ## Gate 10 — Delivery
 
 - [ ] Speaker notes contain key reasoning and caveats
 - [ ] Timing has been rehearsed or realistically estimated
+- [ ] A preplanned skip sequence preserves the question, decisive evidence, and conclusion
 - [ ] Conclusions are protected from time cuts
 - [ ] Likely expert objections have concise answers
 - [ ] Backup slides cover methods, controls, risks, and extra evidence
 - [ ] PPTX and PDF open correctly
 - [ ] Speaker notes survived export/serialization where notes were requested
+- [ ] The conclusion/Q&A slide is the last main-narrative slide and is left visible for discussion
 
 ## Final Audit Summary
 

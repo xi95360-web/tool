@@ -25,6 +25,7 @@ Jessica 的实用工具与 Codex Skills 集合。每个子目录都可独立使�
 
 - 内置用户问卷和参考文献候选表
 - 每页执行 claim–evidence–limitation–takeaway 内容契约
+- 融合 action title、ghost deck 和单页单证据焦点的沟通优先设计
 - 区分已发表证据、用户数据、研究假设和推断，禁止虚构数据或引用
 - 包含 proposal、journal club 双路线，逐图分析、讲稿、计时、备页和渲染质检
 - Skill：`build-research-presentation/`

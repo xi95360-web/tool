@@ -15,6 +15,8 @@ The audience should identify within five seconds:
 
 Use annotations, direct labels, restrained highlighting, and claim titles to expose this structure.
 
+The action title and dominant exhibit must agree: the title states the bounded takeaway, while the exhibit makes the observation visible. If either can be removed without weakening the slide, redesign the slide.
+
 ## 2. Evidence Status
 
 Use exactly these evidence statuses:
@@ -70,21 +72,25 @@ For chemical structures and mechanisms, redraw in an appropriate scientific edit
 
 - Use short phrases on the slide and full reasoning in notes.
 - Avoid paragraphs and copied abstracts.
+- Treat roughly 40 body-text words as an audit trigger, not a rigid limit; split the slide or move detail to notes/backup when the audience would need to read instead of listen.
 - Use one to three concise annotations for the main visual.
 - Define abbreviations on first use.
 - Maintain consistent nomenclature and symbols.
 - Put the conclusion close to the relevant evidence.
 - Do not put the speech transcript on the slide.
 
-Minimum readable sizes depend on room and template. As a robust default, use approximately 36–44 pt titles and 24–28 pt body text; never solve overcrowding by shrinking below a readable size.
+Minimum readable sizes depend on room and template. For 16:9 academic content slides, use approximately 28–34 pt bold action titles, 20–24 pt body text, 16–18 pt figure labels, and 11–14 pt citations. Use 36–44 pt for short section/title statements. Keep action titles to one or two lines and never shrink them below 24 pt to rescue an overcrowded slide. Increase sizes for large rooms.
 
 ## 5. Layout and Visual System
 
 - Use one dominant visual and a clear reading order.
+- Allow multiple panels only when they act as one comparison or inferential unit.
 - Preserve substantial whitespace, but avoid meaningless empty areas caused by poor alignment.
 - Keep margins, grids, object scales, arrows, and text styles consistent.
 - Use high contrast and a color-blind-safe palette.
+- Default to a white or very light content background, one sans-serif family, and no more than three semantic colors; an institutional template may override these defaults.
 - Reserve one accent color for evidence emphasis and another only if a stable semantic distinction requires it.
+- Left-align body text by default. Choose evidence-left/interpretation-right, full-width exhibit, or another reading order according to the scientific content rather than enforcing one layout everywhere.
 - Avoid rainbow palettes, shadows, excessive gradients, and decorative icons.
 - Vary layouts according to scientific need, not for novelty.
 - Use animation only to reveal a causal, temporal, or inferential sequence.
@@ -127,3 +133,4 @@ For a fixed presentation slot, plan to finish slightly early and protect discuss
 - “novel,” “important,” or “transformative” without a comparison or measurable consequence;
 - generic slides containing only “Background,” “Methods,” or “Future work”;
 - an empty “Thank you” or decorative section divider when a conclusion, roadmap, or scientific question can remain visible.
+- topic-label titles such as “Background,” “Methods,” or “Results” when an evidence-bounded action title is possible.

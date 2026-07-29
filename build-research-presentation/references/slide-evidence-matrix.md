@@ -4,7 +4,7 @@
 
 ## A. Slide Plan
 
-| Slide # | 预计时间 | Claim / question title | 科学目的 | 主证据对象 | Claim IDs | Take-home | 下一页过渡 | 备页 |
+| Slide # | 预计时间 | Action title / precise question | 科学目的 | 主证据 exhibit | So-what annotation | Claim IDs | 下一页过渡 | 备页 |
 |---:|---:|---|---|---|---|---|---|---|
 | 1 | 0:30 |  |  |  |  |  |  |  |
 | 2 | 1:00 |  |  |  |  |  |  |  |
@@ -19,6 +19,17 @@
 | C001 |  |  |  |  |  |  |  |  |  |  |  | yes/no | yes/no |
 
 If one claim uses several sources, use several ledger rows with the same Claim ID. If one source supports several claims, use separate rows so each relationship remains auditable.
+
+## C. Ghost-Deck Test
+
+只读 action titles，逐项检查：
+
+- [ ] 标题序列能表达一个完整主论点，而不是章节目录
+- [ ] 中心问题或假设在前 2–3 页内明确出现
+- [ ] 每个标题都由本页 Claim IDs 支持，没有把推断写成事实
+- [ ] 每一页都让下一页成为自然且必要的问题
+- [ ] 删除任一页都会造成明确的逻辑缺口；否则删除或移入备页
+- [ ] 最后一页直接回答开头的问题，并适合在 Q&A 时停留
 
 ## Evidence Object Checklist
 
@@ -40,6 +51,8 @@ If one claim uses several sources, use several ledger rows with the same Claim I
 - [ ] 标题是结论或问题，不是泛泛的章节名
 - [ ] 视觉对象与标题直接相关
 - [ ] 关键数据、对照和结论可在数秒内识别
+- [ ] 一个主证据 exhibit 支持一个核心 insight；多 panel 只服务同一推断
+- [ ] 图上直接标出了决定性观察及其 so-what
 - [ ] 引用紧邻内容并可追溯到页/图/表
 - [ ] Claim ID 能在台账中找到，证据状态使用受控词汇
 - [ ] 解释没有超出证据边界
