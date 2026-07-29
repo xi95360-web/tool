@@ -1,6 +1,6 @@
 ---
 name: build-research-presentation
-description: Build rigorous, evidence-dense academic presentations for research proposals and journal clubs. Use when the user asks to plan, create, revise, audit, or rehearse a proposal defense, qualifying proposal, literature seminar, paper discussion, or journal-club PPT/PPTX/PDF; turn papers, a Zotero collection, data, or a research idea into slides; or select suitable references for those formats. Enforces a user questionnaire, claim-level evidence traceability, figure-level analysis, explicit citations, scientific logic checks, speaker notes, timing, and rendered-slide quality review.
+description: Build rigorous, evidence-dense academic presentations for research proposals and journal clubs. Use when the user asks to plan, create, revise, audit, or rehearse a proposal defense, qualifying proposal, literature seminar, paper discussion, or journal-club PPT/PPTX/PDF; turn papers, a Zotero collection, data, or a research idea into slides; or select suitable references for those formats. Enforces a user questionnaire, claim-level evidence traceability, figure-level analysis, communication-first action titles and ghost-deck structure, explicit citations, scientific logic checks, speaker notes, timing, and rendered-slide quality review.
 ---
 
 # Build Research Presentation
@@ -21,7 +21,7 @@ Create presentations whose logic can survive expert questioning. Treat visual po
 4. Make every non-administrative slide scientifically useful. A content slide must have a claim or question, an evidence object, a bounded interpretation, a source locator, and a spoken transition.
 5. Use real data figures, redrawn mechanisms, experimental schematics, models, or comparison tables before decorative imagery. Never generate fake scientific data. Clearly label conceptual illustrations.
 6. Preserve uncertainty and negative evidence. State what a result does **not** establish.
-7. Use claim-style slide titles. Replace “Results” with a conclusion such as “Knockdown reduces invasion without changing viability.”
+7. Make one defensible argument per presentation. Use action titles that state the slide's evidence-bounded takeaway; use a precise question only when the answer is intentionally unresolved. Replace “Results” with “Knockdown reduces invasion without changing viability.”
 8. Keep slides editable when the user requests PPTX. Also export PDF when possible.
 
 ## Read the Relevant Resources
@@ -32,6 +32,7 @@ Always read:
 - `references/slide-evidence-matrix.md`
 - `references/literature-search-record.md`
 - `references/content-design-standard.md`
+- `references/communication-first-design.md`
 - `references/quality-gates.md`
 
 Then read one route:
@@ -40,6 +41,8 @@ Then read one route:
 - Journal club: `references/journal-club-route.md`
 
 Read `references/source-principles.md` when explaining, auditing, or applying the original course principles.
+
+Retain `references/third-party-notices.md` when redistributing or maintaining the skill.
 
 ## Workflow
 
@@ -110,6 +113,8 @@ Produce:
 - a section outline with time allocation;
 - an evidence map and claim ledger using `references/slide-evidence-matrix.md`.
 
+Write the action-title sequence before layout. Run the ghost-deck test: titles alone must express one coherent, evidence-bounded argument, and each title must make the next slide necessary. A title sequence that reads as a topic list fails.
+
 Reject an outline if:
 
 - a conclusion appears before its premises;
@@ -117,7 +122,9 @@ Reject an outline if:
 - an aim does not test the stated hypothesis;
 - a result lacks an appropriate control or comparison;
 - a slide merely repeats the paper or proposal text;
-- adjacent sections have no explicit transition.
+- adjacent sections have no explicit transition;
+- the deck tries to present the whole paper or proposal instead of one defensible main argument;
+- the ghost deck introduces a claim before its support or overstates the claim ledger.
 
 ### 4. Apply the Route
 
@@ -129,10 +136,11 @@ Keep the introduction to the minimum background needed to understand the questio
 
 Before building, write a slide specification with:
 
-- claim/question title;
+- evidence-bounded action title or precise unresolved question;
 - scientific purpose;
-- visual/evidence object;
+- dominant visual/evidence exhibit;
 - 1–3 annotations that direct attention;
+- explicit “so what” annotation on the decisive observation;
 - exact source locator;
 - interpretation and limitation;
 - one-sentence takeaway;
@@ -149,7 +157,7 @@ Use the available presentation-generation skill (for example, Presentations or P
 Visual rules:
 
 - one main idea per slide;
-- prioritize one dominant scientific visual;
+- prioritize one dominant scientific exhibit; use several panels only when they form one comparison or inference;
 - redraw or simplify paper figures for projection while preserving values and meaning;
 - enlarge labels, lines, structures, axes, and legends;
 - explain axes, units, groups, sample size, error bars, statistical tests, controls, and panel order;
@@ -159,6 +167,8 @@ Visual rules:
 - use animation only to reveal a reasoning sequence, not for decoration.
 
 Do not paste unreadable multi-panel figures. Split them into multiple slides or crop to the discussed panel while retaining attribution and enough context to avoid misleading the audience.
+
+Apply the communication-first defaults in `references/communication-first-design.md`. Institutional templates and accessibility needs may override its visual defaults, but not its argument, attribution, or evidence rules.
 
 ### 7. Cite on the Slide
 
@@ -182,7 +192,7 @@ Speaker notes should contain reasoning that is too detailed for the slide:
 - likely expert objection;
 - concise answer and backup-slide pointer.
 
-Target roughly one slide per minute only as a planning heuristic. Give complex evidence slides more time. Rehearse to finish before the hard limit and preserve Q&A. Never cut the conclusion to recover time.
+Target roughly one slide per minute only as a planning heuristic. Give complex evidence slides more time. Rehearse to finish about 5–10% before the hard talk limit and reserve Q&A separately. Never cut the conclusion to recover time.
 
 Prepare backup slides for controls, full methods, sensitivity analyses, alternative models, extra literature, risk mitigation, and likely questions.
 
@@ -200,6 +210,8 @@ For PPTX:
 Record objective QA evidence: artifact open test, slide count, rendered-image count, notes presence, unresolved links/identifiers, font or overflow findings, and the reviewer observation for each manual gate. The render count must equal the deck slide count.
 
 Also compare the final deck against the evidence matrix. A visually attractive slide fails if its claim is unsupported or its figure cannot be read at presentation distance.
+
+Read the rendered action titles in order one final time. Confirm that the ghost deck, the claim ledger, and the spoken transitions express the same argument.
 
 ## Required Deliverables
 
@@ -223,10 +235,11 @@ If PPTX or PDF generation, rendering, or open-testing is unavailable, provide th
 A deck is complete only when:
 
 - the thesis, section order, and transitions form a valid argument;
+- the action titles pass the ghost-deck test without exceeding the evidence;
 - every content slide passes the slide contract;
 - proposal aims are falsifiable and feasible, or journal-club results are analyzed figure by figure;
 - sources are verified and traceable;
 - uncertainties, limitations, and alternatives are explicit;
 - content fits the allotted time;
 - the rendered deck is readable, balanced, consistent, and free of layout defects;
-- the closing answers the opening question without adding unsupported claims.
+- the closing answers the opening question without adding unsupported claims and remains visible during Q&A.
