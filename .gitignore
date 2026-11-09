@@ -3,6 +3,7 @@ __pycache__/
 *.egg-info/
 .venv/
 .quickcheck-env/
+.workflow-env/
 .DS_Store
 quickcheck_*/
 *.sqlite

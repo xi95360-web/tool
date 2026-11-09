@@ -6,6 +6,8 @@ Jessica 的实用工具与 Codex Skills 集合。每个子目录都可独立使�
 
 ### Rotation Lab Workflows (English, local-first)
 
+**First time? [Start here / 零基础统一入口](./START_HERE.md)** — download, double-click, upload and save results. Python is required; first launch installs the remaining components automatically.
+
 - [Sequencing QuickCheck](./quickchange-seq-check): Sanger screening with a double-click launcher and English upload interface. [零基础中文入门](./quickchange-seq-check/START_HERE.zh-CN.md).
 - [Confocal Cell Measurements](./confocal-cell-measurements): two-channel ratios, segmentation adapters, puncta and QC exports.
 - [STING Structure Triage](./sting-structure-triage): sequence-verified structural site descriptors; research prototype.

@@ -17,5 +17,5 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '${{ matrix.python }}'
-      - run: python -m pip install ./quickchange-seq-check -r confocal-cell-measurements/requirements.txt
+      - run: python -m pip install './quickchange-seq-check[ui]' -r confocal-cell-measurements/requirements.txt
       - run: python -m unittest discover -s tests -v

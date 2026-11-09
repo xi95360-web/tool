@@ -1,5 +1,11 @@
 # Lab workflows release 0.1.0
 
+## Desktop onboarding update (2026-11-09)
+
+All four workflows now have Mac/Windows launchers and English local browser interfaces, with step-by-step English READMEs and Chinese beginner guides. The three added interfaces include clearly labeled synthetic demos, save buttons and in-page errors. Confocal exposes explicit image pairing and optional Cellpose installation; structure input exposes chain selection; databank supports source-checked claim entry, save/reopen, search and schema-compatible CSV import. The default local server port supports one app at a time. Windows launchers, Fiji export and Cellpose inference still need platform/model acceptance testing. This does not add a calibrated structure score or a Paperclip connector.
+
+Twenty automated tests pass, including browser first-run screens, synthetic demo buttons, uploaded imaging/structure data through the UI handlers, guided evidence entry and save/reopen, and launchers invoked from unrelated folders with spaces. Upload tests inject synthetic file objects; a manual OS file-dialog/download acceptance test is still separate. CI includes the browser dependencies on Python 3.11 and 3.12.
+
 Four independent projects, MIT code under the root LICENSE. Run locally without API keys. Dependencies and upstream model weights retain their own licenses.
 
 | Project | Implemented | Status / next gate |
