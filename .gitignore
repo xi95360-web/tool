@@ -2,6 +2,7 @@ __pycache__/
 *.py[cod]
 *.egg-info/
 .venv/
+.quickcheck-env/
 .DS_Store
 quickcheck_*/
 *.sqlite

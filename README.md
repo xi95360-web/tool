@@ -6,7 +6,7 @@ Jessica 的实用工具与 Codex Skills 集合。每个子目录都可独立使�
 
 ### Rotation Lab Workflows (English, local-first)
 
-- [Sequencing QuickCheck](./quickchange-seq-check): reference-based Sanger screening, alignment reports and optional local upload UI.
+- [Sequencing QuickCheck](./quickchange-seq-check): Sanger screening with a double-click launcher and English upload interface. [零基础中文入门](./quickchange-seq-check/START_HERE.zh-CN.md).
 - [Confocal Cell Measurements](./confocal-cell-measurements): two-channel ratios, segmentation adapters, puncta and QC exports.
 - [STING Structure Triage](./sting-structure-triage): sequence-verified structural site descriptors; research prototype.
 - [STING Mutant Databank](./sting-mutant-databank): provenance-aware SQLite schema, CSV import and offline search.

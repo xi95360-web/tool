@@ -15,6 +15,7 @@ def main(argv=None):
     p.add_argument('--reference', type=Path, required=True)
     p.add_argument('--input-dir', type=Path, required=True)
     p.add_argument('--feature-label', help='Exact CDS label, gene, locus_tag or protein_id')
+    p.add_argument('--feature-index', type=int, help='1-based CDS index (used by the upload interface)')
     p.add_argument('--expected', help='Comma-separated AA substitutions, e.g. L90E,M120L')
     p.add_argument('--expected-file', type=Path, help='TSV: filename_regex<TAB>mutation1,mutation2')
     p.add_argument('--interactive', action='store_true')
@@ -37,7 +38,13 @@ def main(argv=None):
         reference = args.reference.resolve()
         inputs = args.input_dir.resolve()
         record = core.load_reference(reference)
-        feature = core.reference_feature(record, args.feature_label)
+        if args.feature_index is not None:
+            features = [f for f in record.features if f.type == 'CDS']
+            if args.feature_label or not 1 <= args.feature_index <= len(features):
+                raise ValueError('Invalid CDS index or conflicting CDS selection')
+            feature = features[args.feature_index - 1]
+        else:
+            feature = core.reference_feature(record, args.feature_label)
         positions = core.feature_genomic_positions(feature) if feature else []
         cds = str(feature.extract(record.seq)).upper() if feature else ''
         mapping = core.load_expected_map(args.expected_file.resolve(), inputs, Path.cwd()) if args.expected_file else None
@@ -55,7 +62,8 @@ def main(argv=None):
         payload = json.loads(report_json.read_text())
         payload.update(version=__version__, reference_sha256=hashlib.sha256(reference.read_bytes()).hexdigest(),
                        input_sha256={str(f): hashlib.sha256(f.read_bytes()).hexdigest() for f in files},
-                       selected_feature=args.feature_label, expected_source='map' if mapping else 'explicit' if expected else 'discovery')
+                       selected_feature=args.feature_label, selected_feature_index=args.feature_index,
+                       expected_source='map' if mapping else 'explicit' if expected else 'discovery')
         report_json.write_text(json.dumps(payload, indent=2))
         core.print_summary(results, inputs, reference, out)
         if args.open:

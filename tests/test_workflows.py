@@ -1,6 +1,8 @@
 import importlib.util
 import json
 import random
+import shutil
+import subprocess
 import sys
 import tempfile
 import unittest
@@ -50,6 +52,22 @@ class Workflows(unittest.TestCase):
     def test_discovery_does_not_infer_filename(self):
         self.assertEqual(core.parse_expected('H72N_primer_V147L'), [])
         self.assertEqual(self.call(self.seq).status, 'NO_EXPECTATION')
+
+    def test_launcher_from_unrelated_folder_with_spaces(self):
+        target = self.path/'application with spaces'
+        shutil.copytree(ROOT/'quickchange-seq-check', target, ignore=shutil.ignore_patterns('.quickcheck-env','build','__pycache__','*.egg-info'))
+        result = subprocess.run([sys.executable,str(target/'launch.py'),'--check'],cwd=self.path,capture_output=True,text=True)
+        self.assertEqual(result.returncode,0,result.stderr)
+
+    def test_dropdown_cds_selection(self):
+        reference = self.path/'reference.gb'
+        self.record.features *= 2
+        SeqIO.write(self.record,reference,'genbank')
+        reads = self.path/'reads'; reads.mkdir()
+        (reads/'sample.seq').write_text(self.seq)
+        self.assertEqual(main(['--reference',str(reference),'--input-dir',str(reads),
+            '--feature-index','2','--out-dir',str(self.path/'index-report')]),0)
+        self.assertEqual(main(['--reference',str(reference),'--input-dir',str(reads),'--feature-index','3']),1)
 
     def test_target_and_reverse_complement(self):
         seq = self.seq[:120]+'GAA'+self.seq[123:]
