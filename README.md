@@ -4,6 +4,15 @@ Jessica 的实用工具与 Codex Skills 集合。每个子目录都可独立使�
 
 ## 项目
 
+### Rotation Lab Workflows (English, local-first)
+
+- [Sequencing QuickCheck](./quickchange-seq-check): reference-based Sanger screening, alignment reports and optional local upload UI.
+- [Confocal Cell Measurements](./confocal-cell-measurements): two-channel ratios, segmentation adapters, puncta and QC exports.
+- [STING Structure Triage](./sting-structure-triage): sequence-verified structural site descriptors; research prototype.
+- [STING Mutant Databank](./sting-mutant-databank): provenance-aware SQLite schema, CSV import and offline search.
+
+See [implementation status and validation gates](./docs/lab-workflows-release.md). These projects run without API keys; model weights and optional dependencies are installed separately. No private experimental data are included.
+
 ### [Zotero Word Translate](./zotero-word-translate)
 
 在 Zotero 7–9 的 PDF/EPUB 选区浮窗中提供中英双向翻译。无需 API Key，只将当前选中的文字发送给 MyMemory，不读取 PDF 或 Zotero 文库。

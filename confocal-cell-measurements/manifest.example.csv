@@ -1,0 +1,2 @@
+image_id,reference,signal,labels,original_size_z,pixel_um,condition,biological_replicate
+example,reference.tif,signal.tif,labels.tif,1,0.2,control,replicate_1

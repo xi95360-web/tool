@@ -1,0 +1,8 @@
+{
+  "backend": "cellpose",
+  "model": "cpsam_v2",
+  "gpu": false,
+  "min_cell_pixels": 100,
+  "min_denominator": 1.0,
+  "puncta": {"diameter_min_um": 0.6, "diameter_max_um": 2.0, "noise_multiplier": 3.0}
+}

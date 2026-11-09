@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "quickchange-seq-check"
+version = "0.1.0"
+description = "Local, reference-based Sanger mutation screening"
+requires-python = ">=3.10"
+dependencies = ["biopython>=1.85,<2"]
+license = "MIT"
+
+[project.optional-dependencies]
+ui = ["streamlit>=1.40,<2"]
+
+[project.scripts]
+quickcheck = "quickcheck.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
